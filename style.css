@@ -1,0 +1,236 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+
+}
+button {
+  width: 20%;
+  height: 50px;
+  border-radius: 27px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav button {
+  background-color: white;
+  
+}
+.nav button:hover{
+    cursor: pointer;
+    color: hsl(208, 11%, 55%) ;
+}
+header {
+  background-image: url("/images/bg-hero-desktop.svg");
+  padding: 4%;
+  max-width: 100%;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2%;
+  max-width: 100%;
+  margin-top: 10%;
+  gap: 5%;
+  font-size: larger;
+}
+.hero button {
+  background-color: hsl(322, 100%, 66%);
+  width: 300px;
+  margin-top: 10%;
+  color: white;
+  font-size: large;
+}
+.hero p {
+  margin-top: 10%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  border-radius: 20px;
+  margin-bottom: 20%;
+}
+main {
+  padding: 7%;
+}
+.main img {
+  width: 40%;
+}
+.content {
+  width: 45%;
+  font-size: large;
+}
+.content p {
+  color: gray;
+  line-height: 2;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 2%;
+}
+.outDiv {
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+  align-items: center;
+  margin: -15% auto 10% auto;
+}
+
+.outDiv button {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  width: 50%;
+  padding: 2%;
+  color: white;
+  font-size: large;
+}
+.outDiv button:hover, .hero button:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+.footer--content{
+    display: flex;
+    justify-content: space-evenly;
+    color: hsl(193, 100%, 96%);
+    
+    
+}
+
+.footer--content > div{
+    padding: 0 10px;
+}
+.footer--content ul{
+    list-style: none;
+}
+.footer--content a {
+    text-decoration: none;
+    color:inherit ;
+}
+
+.footer--content a:hover{
+    text-decoration: underline;
+}
+.social--copyRight{
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social img:hover{
+    background-color:hsl(322, 100%, 66%) ;
+    border-radius: 50%;
+}
+
+.logo{
+    fill:hsl(193, 100%, 96%) ;
+}
+li {
+    margin-bottom: 20px;
+}
+main,header,footer{
+  max-width: 100%;
+}
+
+.hero img{
+  max-width: 100%;
+  width: 50%;
+}
+.footer1{
+  margin-top: -7%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main,.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+
+  }
+  
+  .content{
+    width: 100%;
+    font-size: small;
+    text-align: center;
+    order: 2;
+  }
+  .main img{
+    width: 100%;
+    order: 1;
+  }
+  .nav img{
+    width: 30%;
+  }
+  .hero img{
+    width: 100%;
+  }
+  .hero--text{
+    margin-bottom: 20%;
+    text-align: center;
+
+  }
+  .nav button{
+    width: 30%;
+  }
+  
+  
+}
+
+@media only screen and (max-width: 1200px){
+  .footer--content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: -6%;
+  }
+  .social--copyRight{
+    align-self: center;
+    text-align: center;
+  }
+  .outDiv{
+    width: 85%;
+    font-size: small;
+    padding: 10% 3%;
+  }
+  .outDiv button{
+    font-size: medium;
+    font-weight: lighter;
+    width: 70%;
+  }
+  
+  .footer--content img{
+    width: 1rem;
+    margin-right: 3%;
+
+  }
+
+  .social img{
+    width: 2rem;
+  }
+  .social--copyRight{
+    font-size: smaller;
+  }
+
+}
